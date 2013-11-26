@@ -1,7 +1,9 @@
 <?php
 
-class ShopProduct
+class ShopProduct implements IdentityObject
 {
+    use PriceUtilities, IdentityTrait;
+    
     private $id = 0;
     
     public function setID($id)
