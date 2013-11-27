@@ -19,7 +19,7 @@ require "User.php";
 print_r(User::create());
 print_r(SpreadSheep::create());*/
 
-require "PriceUtilities.php";
+/*require "PriceUtilities.php";
 require "IdentityTrait.php";
 require "TaxTools.php";
 require "IdentityObject.php";
@@ -28,12 +28,20 @@ require "Service.php";
 require "UtilityService.php";
 
 
-//$obj = new ShopProduct();
+$obj = new ShopProduct();
 $obj2 = new UtilityService(100); 
 
-/*print $obj->calculateTax(100) . "<br />";
-print $obj->generateId() . "<br />";*/
+print $obj->calculateTax(100) . "<br />";
+print $obj->generateId() . "<br />";
 
 //print $obj2->calculateTax(200) . "<br />";
 //print $obj2->basicTax(100);
-print $obj2->getFinalPrice();
+print $obj2->getFinalPrice();*/
+
+require "FileException.php";
+require "XmlException.php";
+require "ConfException.php";
+require "Conf.php";
+require "Runner.php";
+
+Runner::init();
